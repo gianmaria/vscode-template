@@ -1,11 +1,11 @@
 {
     "tasks": [
         {
-            "label": "Build Debug",
+            "label": "Build",
             "type": "process",
             "command": "build.bat",
             "args": [
-                "debug"
+                "release"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
@@ -20,9 +20,9 @@
             "detail": "Use this for building"
         },
         {
-            "label": "Run Debug executable",
+            "label": "Run executable",
             "type": "shell",
-            "command": "${workspaceFolder}\\build\\debug\\main.exe",
+            "command": "${workspaceFolder}\\build\\release\\main.exe",
             "group": {
                 "kind": "test",
                 "isDefault": true
